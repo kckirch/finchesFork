@@ -6,8 +6,8 @@
 
     <?php
 
-        echo "Hello! Welcome to the Finches Landing Page, here you can find links to all the finches code examples"
+        echo "Hello! Welcome to the Finches Landing Page, here you can find links to all the finches code examples";
     ?>
-    
+
     </body>
 </html>
