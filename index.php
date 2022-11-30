@@ -21,9 +21,7 @@
     <br>
     <a href="http://tpcg.io/_JR5SE9">Sum and String Example </a>
 
-    <br>
-    <br>
-    <a href="/strings.php">Strings </a>
+
 
     <br>
     <br>
