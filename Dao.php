@@ -1,7 +1,7 @@
 <?php
 
     class Dao{
-
+        //Heroku Database connection
         private $dsn='mysql:dbname=heroku_80b23211cf3ffb6;host=us-cdbr-east-06.cleardb.net';
         private $user="b021dee6c96aa1";
         private $password="8dceb965";
@@ -49,13 +49,11 @@
         }
      }
     
-
+    //Deletes user with bindParam
     public function deleteUser($accountNum){
 
         $conn = $this->getConection();
-        //$deleteQuery = "delete from inventory_table where inv_num = :inv_num";
-
-        //fix this to delete certain row.  
+        
         $deleteQuery = "DELETE FROM heroku_80b23211cf3ffb6 . user WHERE accountNum = :accountNum";
         $q = $conn->prepare($deleteQuery);
         $q->bindParam(":accountNum", $accountNum);
