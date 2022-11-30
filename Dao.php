@@ -2,7 +2,7 @@
 
     class Dao{
         //local login
-        // public $dsn='mysql:dbname=bank;host=127.0.0.1';
+        // public $dsn='mysql:dbname=heroku_80b23211cf3ffb6;host=127.0.0.1';
         // public $user="root";
         // public $password="";
     
@@ -28,7 +28,7 @@
            
             $rows = $conn->query("SELECT firstName, lastName, accountNum,
             balance, create_time
-             FROM bank.user;", PDO::FETCH_ASSOC);
+             FROM heroku_80b23211cf3ffb6.user;", PDO::FETCH_ASSOC);
         }
         catch(Exception $e){
             echo print_r($e,1);
@@ -41,7 +41,7 @@
     public function insertNewUser($firstName, $lastName, $balance){
         $conn = $this->getConection();
         try{
-           $q = $conn->prepare("INSERT INTO bank . user (firstName, lastName, balance) VALUES (:firstName, :lastName, :balance)");
+           $q = $conn->prepare("INSERT INTO heroku_80b23211cf3ffb6 . user (firstName, lastName, balance) VALUES (:firstName, :lastName, :balance)");
 
            $q->bindParam(":firstName", $firstName);
            $q->bindParam(":lastName", $lastName);
@@ -61,7 +61,7 @@
         //$deleteQuery = "delete from inventory_table where inv_num = :inv_num";
 
         //fix this to delete certain row.  
-        $deleteQuery = "DELETE FROM bank . user WHERE accountNum = :accountNum";
+        $deleteQuery = "DELETE FROM heroku_80b23211cf3ffb6 . user WHERE accountNum = :accountNum";
         $q = $conn->prepare($deleteQuery);
         $q->bindParam(":accountNum", $accountNum);
         $q->execute();
@@ -72,7 +72,7 @@
     public function updateUser($firstName, $lastName, $balance){
         $conn = $this->getConection();
         try{
-            $updateQuery = "UPDATE FROM bank . user SET firstName = ':firstName', lastName = ':lastName', balance = ':balance' WHERE accountNum = $_GET[accountNum]";
+            $updateQuery = "UPDATE FROM heroku_80b23211cf3ffb6 . user SET firstName = ':firstName', lastName = ':lastName', balance = ':balance' WHERE accountNum = $_GET[accountNum]";
             $q = $conn->prepare($updateQuery);
             $q->bindParam(":firstName", $firstName);
             $q->bindParam(":lastName", $lastName);
