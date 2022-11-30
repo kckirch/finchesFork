@@ -1,12 +1,7 @@
 <?php
 
     class Dao{
-        //local login
-        // public $dsn='mysql:dbname=heroku_80b23211cf3ffb6;host=127.0.0.1';
-        // public $user="root";
-        // public $password="";
-    
-        //heroku database
+
         private $dsn='mysql:dbname=heroku_80b23211cf3ffb6;host=us-cdbr-east-06.cleardb.net';
         private $user="b021dee6c96aa1";
         private $password="8dceb965";
@@ -89,8 +84,6 @@
 
 
 }
-$dao = new Dao();
-$dao->getAccounts();
 
 
 ?>
