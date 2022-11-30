@@ -7,7 +7,7 @@
         // public $password="";
     
         //heroku database
-        private $dsn='mysql:dbname=heroku_80b23211cf3ffb6;host=us-cdbr-east-05.cleardb.net';
+        private $dsn='mysql:dbname=heroku_80b23211cf3ffb6;host=us-cdbr-east-06.cleardb.net';
         private $user="b021dee6c96aa1";
         private $password="8dceb965";
 
@@ -16,7 +16,7 @@
             $conn = new PDO($this->dsn, $this->user, $this->password);
         }
         catch (PDOException $e){
-            echo 'Connection failed' . $e->getMessage();
+            echo 'Connection failed ' . $e->getMessage();
         }
         return $conn;
     }
