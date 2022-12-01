@@ -18,15 +18,25 @@
     </body>
 
     <body>
-        Most popular, open source, server sided scripting language.
+        Most popular, open source, server sided scripting language. Stands for PHP: Hypertext Preprocessor
         <br>
         PHP was designed by  XXX in XXX
         <br>
-        PHP is a general purpose scripting language suited for web development.
+        PHP is a general purpose scripting language suited for web development that executes its scripts on the server.
         <br>
-        PHP is an imperative, its functions only have access to their own variables, and is loosely typed. It is dynamically typed. Similar to python.
+        It can do many things to modify and generate content and data, even its output.
+        <br>
+        Since PHP can run on many different platforms and with almost all servers, it is very easy to use and operate.
+        <br>
+        PHP is an imperative, its functions only have access to their own variables, and is loosely and dynamically typed. Similar to python.
         <br>
         PHP is interpreted but compiled down to bytecode that is then interpreted by the runtime Zend Engine.
+
+        <br>
+        <br><br>
+        <b>Installation</b>
+        <br>
+        Host remotely online or install your own server. Common servers to install are XAMPP, LAMP, WAMP. These often include everything you need, apache, DBs, etc
         
     </body>
 
