@@ -111,8 +111,13 @@
         $_SESSION <br><br>
         These are always accessible from any file, class or function.
         <br><br><br><br>
-        Php utilizes class' which are defined by using the <b>class</b> keyword, followed by a name and curly braces.<br>
+        PHP utilizes class' which are defined by using the <b>class</b> keyword, followed by a name and curly braces.<br>
         To create new objects from a class, you use the <b>new</b> keyword. <b>$this</b> refers to the current object inside of a method.
+        <br><br><br>
+        public, protected, and private are used to control access.
+        <br><br><br>
+        PHP works very well with MySQL databases with its built in functions. As well as XML formatting and AJAX page loading.
+        <br><br><br>
 
 
 
