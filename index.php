@@ -19,7 +19,12 @@
 
     <body>
         Most popular, open source, server sided scripting language.
-
+        <br>
+        PHP was designed by  XXX in XXX
+        <br>
+        PHP is a general purpose scripting language suited for web development.
+        <br>
+        PHP is an imperative, its functions only have access to their own variables.
         <br>
         
     </body>
