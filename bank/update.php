@@ -45,19 +45,15 @@
 
     }
 
-
-//TODO A check where if the values are not present in the database do not attempt an update on it.
-//also make update populate information based on sql query and not post query
-    
 ?>
+
 <html>
-    <!-- $account here cant be used it must use a Query that pulls the needed information from accountNum -->
     <form method="post" action="update_handler.php">
 
     <?php
 
 
-        //populate prefill info from specific accountNum
+        //populates prefill info from specific accountNum
         
         $accountNum = $_GET['accountNum'];
         echo "You are Editing Account Num:  " . $accountNum;
@@ -66,11 +62,6 @@
         $stmt->execute();
         foreach ($stmt as $row) {}
 
-        //for testing
-        // echo $row['firstName'];
-        // echo $row['lastName'];
-        // echo $row['accountNum'];
-        // echo $row['balance'];
 
     ?>
     
