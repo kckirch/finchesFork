@@ -1,3 +1,5 @@
+
+
 <?php 
     require_once 'Dao.php';
     $dao = new Dao();
@@ -25,7 +27,7 @@
             <input type="text" id="balance" name="balance" required>
         </div>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Add Account">
 
     </form>
     

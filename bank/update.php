@@ -1,3 +1,7 @@
+<a href="/bank/account.php"><b>Accounts</b> </a>
+<br><br>
+
+
 <?php
     require_once 'Dao.php';
     $dao = new Dao();
