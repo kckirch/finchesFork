@@ -26,6 +26,7 @@
         <br>
         PHP is an imperative, its functions only have access to their own variables, and is loosely typed. It is dynamically typed. Similar to python.
         <br>
+        PHP is interpreted but compiled down to bytecode that is then interpreted by the runtime Zend Engine.
         
     </body>
 
