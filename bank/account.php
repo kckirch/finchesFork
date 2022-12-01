@@ -6,6 +6,9 @@
 
 <html>
 
+
+    <h3>Add an Account</h3>
+
     <form method="post" action="accounts_handler.php">
         <div class="accounts_box">
             <label>First Name</label>
@@ -40,7 +43,7 @@
 </html>
 <?php
 
-
+    
     //prints out a list of all accounts through sql
     foreach ($accounts as $account) {
         echo "<tr>";
