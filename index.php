@@ -20,6 +20,7 @@
     <body>
         Most popular, open source, server sided scripting language. Stands for PHP: Hypertext Preprocessor
         <br>
+        <b>History</b>
         PHP was designed by Rasmus Lerdorf in 1994 originally as a simple set of Common Gateway Interface (CGI) binaries, written using the C language.
         <br>
         The simple set of GCI binaries was published under the name PHP (personal home page) and was then released to the public as PHP Tools in 1996.
@@ -36,7 +37,7 @@
         <br>
         According to PHP's own data and statistics, it is know that PHP is installed within hundreds of millions of domains globally.
         <br>
-        <br>
+        <b>Description</b>
         PHP is a general purpose scripting language suited for web development that executes its scripts on the server.
         <br>
         It can do many things to modify and generate content and data, even its output.
