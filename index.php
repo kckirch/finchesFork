@@ -24,7 +24,7 @@
         <br>
         PHP is a general purpose scripting language suited for web development.
         <br>
-        PHP is an imperative, its functions only have access to their own variables.
+        PHP is an imperative, its functions only have access to their own variables, and is loosely typed. It is dynamically typed. Similar to python.
         <br>
         
     </body>
