@@ -10,21 +10,44 @@
 
         echo "Hello! Welcome to the Finches Landing Page, here you can find links to all the finches code examples";
     ?>
+    <br>
+    <br>
+    <br>
+    <br>
 
     </body>
 
-    <br>
-    <br>
+    <body>
+        Most popular, open source, server sided scripting language.
+
+        <br>
+        
+    </body>
+
+
+
+
+    <h2>Specifications and Documents</h2>
+
+
+    <h2>Translators</h2>
+
+
+<body>
+    <h3>Introductory Programs</h3>
     <a href="http://tpcg.io/_59JY8O">Hello World Example </a>
 
     <br>
     <br>
     <a href="http://tpcg.io/_JR5SE9">Sum and String Example </a>
 
-
-
     <br>
     <br>
+    <a href="http://tpcg.io/_28LOPT">Casting </a>
+
+    <br>
+    <h3>More Complex</h3>
+ 
     <a href="/MASH.php">MASH Game</a>
 
     <br>
@@ -32,10 +55,10 @@
     <a href="http://tpcg.io/_2CNR01">MASH Code </a>
 
 
-    <h3>Program</h3>
+    <h3>Advanced Program</h3>
 
     <a href="/bank/account.php">Bank Program</a>
-
+</body>
 
 
 </html>

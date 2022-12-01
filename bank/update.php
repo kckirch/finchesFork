@@ -2,9 +2,8 @@
     require_once 'Dao.php';
     $dao = new Dao();
     $accounts = $dao->getAccounts(); 
-
+    $conn = $dao->getConection();
     
-    //$accounts = $dao->updateUser($firstName, $lastName, $balance );
 
 ?>
 
@@ -23,9 +22,7 @@
 
 <?php
     
-
-    
-foreach ($accounts as $account) {
+    foreach ($accounts as $account) {
         echo "<tr>";
         
         echo "<td>" . ($account["firstName"]) . "</td>";
@@ -49,27 +46,46 @@ foreach ($accounts as $account) {
 //also make update populate information based on sql query and not post query
     
 ?>
+<html>
+    <!-- $account here cant be used it must use a Query that pulls the needed information from accountNum -->
+    <form method="post" action="update_handler.php">
 
-<!-- $account here cant be used it must use a Query that pulls the needed information from accountNum -->
-<form method="post" action="update_handler.php">
+    <?php
 
-<div class="accounts_box">
-    <label>First Name</label>
-    <!-- <input type="text" id="firstName" name="firstName" value="<?php echo $account['lastName']; ?>" required> -->
-    <input type="text" id="firstName" name="firstName" value="<?php echo query('SELECT * FROM bank WHERE accountNum="' . $_GET['accountNum'] . '"');?> required>
-</div>
+        $accountNum = $_GET['accountNum'];
+        echo "You are Editing Account Num:  " . $accountNum;
 
-<div class="accounts_box">
-    <label>Last Name</label>
-    <input type="text" id="lastName" name="lastName" value="<?php echo $account['lastName']; ?>" required>
-</div>
-
-<div class="accounts_box">
-    <label>Balance</label>
-    <input type="text" id="balance" name="balance" value="<?php echo $account['balance']; ?>" required>
-</div>
+        $stmt = $conn->prepare("SELECT * FROM heroku_80b23211cf3ffb6.user where accountNum = $accountNum;");
+        $stmt->execute();
+        foreach ($stmt as $row) {           
+        }
 
 
-<input type="submit" value="Submit">
 
-</form>
+    ?>
+    
+
+
+
+
+    <div class="accounts_box">
+        <label>First Name</label>
+        <input type="text" id="firstName" name="firstName" value="<?php echo $row['firstName']; ?>" required>
+
+    </div>
+
+    <div class="accounts_box">
+        <label>Last Name</label>
+        <input type="text" id="lastName" name="lastName" value="<?php echo $row['lastName']; ?>" required>
+    </div>
+
+    <div class="accounts_box">
+        <label>Balance</label>
+        <input type="text" id="balance" name="balance" value="<?php echo $row['balance']; ?>" required>
+    </div>
+
+
+    <input type="submit" value="Submit">
+
+    </form>
+</html>

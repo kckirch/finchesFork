@@ -62,23 +62,26 @@
 
 
 
-    public function updateUser($firstName, $lastName, $balance){
+    public function updateUser(){
         $conn = $this->getConection();
-        try{
-            $updateQuery = "UPDATE FROM heroku_80b23211cf3ffb6 . user SET firstName = ':firstName', lastName = ':lastName', balance = ':balance' WHERE accountNum = $_GET[accountNum]";
-            $q = $conn->prepare($updateQuery);
-            $q->bindParam(":firstName", $firstName);
-            $q->bindParam(":lastName", $lastName);
-            $q->bindParam(":balance", $balance);
-            $q->execute();
-        }
-        catch(Exception $e){
+
+         try{
+
+            $stmt = $conn->prepare("SELECT firstName FROM heroku_80b23211cf3ffb6.user WHERE accountNum = 24;");
+            $stmt->execute();
+            foreach ($stmt as $row) {
+                print_r($row);
+            }
+         }
+         catch(Exception $e){
             echo print_r($e,1);
             exit;
-        }
-
-
+         }
+         return $stmt;
     }
+    
+
+    
 
 
 }
