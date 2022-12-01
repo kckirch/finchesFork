@@ -20,7 +20,22 @@
     <body>
         Most popular, open source, server sided scripting language. Stands for PHP: Hypertext Preprocessor
         <br>
-        PHP was designed by  XXX in XXX
+        PHP was designed by Rasmus Lerdorf in 1994 originally as a simple set of Common Gateway Interface (CGI) binaries, written using the C language.
+        <br>
+        The simple set of GCI binaries was published under the name PHP (personal home page) and was then released to the public as PHP Tools in 1996.
+        <br>
+        PHP has been expanded on a few times over the years and is currently on its 5th major named release.
+        <br>
+        PHP 4.0 introduced in 2000 an engine designed to handle complex applications, this engine was dubbed the 'Zend Engine' (named after its two engineers Andi Gutmans and Zeev Suraski).
+        <br>
+        This engine was overhauled in the newest edition of PHP and was dubbed the Zend Engine 2.0.
+        <br>
+        The current edition of PHP was released in 2004 and has a new object model as well as a slew of other newly introduced feature.
+        <br>
+        PHP's development team has included, and does still includes countless individuals working on PHP and PHP related support projects, it is run on over one-hundred web servers across six of seven continents.
+        <br>
+        According to PHP's own data and statistics, it is know that PHP is installed within hundreds of millions of domains globally.
+        <br>
         <br>
         PHP is a general purpose scripting language suited for web development that executes its scripts on the server.
         <br>
